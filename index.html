@@ -1,0 +1,110 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Welcome to Kerala</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="validate.js"></script>
+</head>
+<div>
+<body>
+<h1>Welcome to Kerala!</h1>
+<!--description-->
+<p id="main">Kerala, a state on India's tropical Malabar Coast, has nearly 600km of Arabian Sea shoreline. 
+It's known for its palm-lined beaches and backwaters, a network of canals. Inland are the Western Ghats, mountains whose slopes support tea, 
+coffee and spice plantations as well as wildlife. National parks like Eravikulam and Periyar, plus Wayanad and other sanctuaries, are home to 
+elephants, langur monkeys and tigers. September to March is the best time to visit Kerala. Various seasons in Kerala:
+<ul>
+<li>Summer: Stretches from March to May. Ideal time for visiting hill stations, Munnar, Thekkady and Wayanad.</li>
+<li>Monsoon: Stretches from June to August. Immerse yourself in soothing Ayurveda massages, or visit hill stations and backwaters.</li>
+<li>Winter: Stretches from December to February. Enjoy scenic wildlife boat rides along the Thekkady lake where the cool winter breeze will mesmerize you.
+</ul>
+</p>
+<!--table1-->
+<p id="request">Please fill in your details:-</p>
+<form name="myForm onsubmit="return validateForm();">
+<table class="t2"><tr><td>
+		First name:<br>
+		<input id="fname" type="text" onblur="checkname1()"><span id="message1"></span><br></td>
+		<td>Last name:<br>
+		<input id="lname" type="text" onblur="checkname2()"><span id="message2"></span><br></td>
+
+		<tr><td>Email:<br>
+		<input id="mail" type="email" onblur="validateEmail()"><span id="message4"></span><br></td>
+		<td>Mobile number:<br>
+		<input id="mobile" type="number" onblur="checkmob()"><span id="message3"></span><br></td></tr>
+		<tr><td>Date of arrival:<br>
+		<input id="date1" type="date"></td>
+		<td>Date of departure:<br>
+		<input id="date2" type="date"></td></tr></table></div>
+		<br>
+<!--table2-->
+<p id="request">Please choose your ideal destinations according to your month of visit:-</p><br>
+<table class="t1"><tr><th>Choose here</th><th>Picture</th><th>Description</th><th>Places</th></tr>
+
+<tr>
+<td><input type="checkbox" name="place" value="Backwaters">Backwaters<br></td><td><img src="https://www.keralatourism.org/images/destination/categoryimages/backwater20131028142642.jpg" width="200" height="200"></td>
+<td>The scenic backwaters of Kerala comprise serene stretches of lakes, canals and lagoons located parallel to the coast of
+the Arabian Sea. The backwater regions of Kerala are one of the most popular tourist destinations in the world. Alappuzha, known as the
+ 'Venice of the East', is especially popular for its houseboat cruises where you can soak in nature at its finest form.</td><td> Alappuzha,
+ Ashtamudi lake in Kollam, Kumarakom</td>
+</tr>
+
+<tr>
+<td><input type="checkbox" name="place" value="Beaches">Beaches<br></td><td><img src="https://www.keralatourism.org/images/destination/categoryimages/beaches20131028142859.jpg" width="200" height="200"></td>
+<td>Kerala is home to a number of spectacular beaches that will take your breath away. As Kerala is a coastal state, some of 
+the most popular tourist destinations in Kerala are beaches. The Kerala coast is replete with exotic resorts and hotels where travellers can 
+spend their time sunbathing, swimming or simply enjoying the stunning view.</td><td> Kovalam, Varkala, Cherai, Poovar<td>
+</tr>
+
+<tr>
+<td><input type="checkbox" name="place" value="Forts and Palaces">Forts and Palaces<br></td><td><img src="https://www.keralatourism.org/images/destination/categoryimages/forts_palaces20131028142913.jpg" width="200" height="200"></td>
+<td>Kerala has had a long line of rulers and armies that have shaped the culture and architecture of the State over
+centuries. Many of the prominent forts and palaces still exist to this day as a reminder of a bygone era. Listed below are all the historical
+ forts and palaces that warrant a visit.</td><td>Anjengo Fort, Bastion Bungalow, Padmanabhapuram Palace. </td>
+</tr>
+
+<tr>
+<td><input type="checkbox" name="place" value="Hills">Hills<br></td><td><img src="https://www.keralatourism.org/images/destination/categoryimages/hills20131028142924.jpg" width="200" height="200"></td>
+<td>Kerala brings to you a magical tryst with nature through its various hills and hill stations. A majority of these places in Kerala are situated on 
+the windward side of the majestic Western Ghats. Enjoy the long chain of lush mist-clad hill stations of Kerala and explore the various plantations, wildlife, flora 
+and fauna that comprise an integral part of this experience.</td><td>Amrithamedu in Idukki, Echo point in Munnar, Charalkunnu hills<td>
+</tr>
+		
+<tr>
+<td><input type="checkbox" name="place" value="Museums">Museums<br></td><td><img src="https://www.keralatourism.org/images/destination/categoryimages/museums20131028142954.jpg" width="200" height="200"></td>
+<td>Museums are storehouses of not just our history but also a treasure trove of information regarding the various events and mechanisms that led us to this point in time. They have with them teachings, information
+ and even warnings at times which are of great significance to the future generations. From Heritage Museums, to Art Museums to niche 
+Museums that catalogue a specific topic, we have safeguarded these testimonials with the best possible efforts and resources.</td><td>Arakkal Kettu Museum, Indo-Portugese Museum, Bay 
+Island Driftwood Museum</td>
+</tr>
+
+<tr>
+<td><input type="checkbox" name="place" value="Monuments">Monuments<br></td><td><img src="https://www.keralatourism.org/images/destination/categoryimages/monuments20131028142939.jpg" width="200" height="200"></td>
+<td>Kerala monuments are relics of a past that the state is extremely proud of and testament to the technical knowledge our 
+forefathers possesed. These indicate some of the finest gifts left for us by the ancestors. They are storehouses of information and contain 
+stories regarding the glorious history of Kerala. They stand as proud testaments of our architectural prowess.</td><td>Bekal fort, Dutch
+ cemetery- Ernakulam, Government Secretriat, Vizhinjam rock cut cave. </td>
+</tr>
+
+<tr>
+<td><input type="checkbox" name="place" value="Waterfalls">Waterfalls<br></td><td><img src="https://www.keralatourism.org/images/destination/categoryimages/waterfalls20131028143146.jpg" width="200" height="200"></td>
+<td>Kerala is popular for having numerous majestic waterfalls. These scintillating cascades are famous picnic spots and excursion destinations round the year. 
+The luscious Kerala waterfalls are a sight your eyes will never tire of feasting upon.</td><td>Aruvikuzhy waterfalls, 
+Athirapally and Vazhachal Waterfalls in Thrissur</td>
+</tr>
+
+<tr>
+<td><input type="checkbox" name="place" value="Pilgrim centres">Pilgrim centres<br></td><td><img src="https://www.keralatourism.org/images/destination/categoryimages/pilgrim_centres20131028143104.jpg" width="200" height="200">
+</td><td>Kerala is known to be amongst the rare places where all major religions have coexisted peacefully for centuries. Each have left their own mark on the culture of the state.
+ From Hindu temples, churches and mosques to Jain temples, synagogues and Buddhist monasteries, there are various centers of pilgrimage for our 
+visitors. Do try adding them to your itinerary because they are amongst the most spiritually calming places in the world.</td>
+<td>Annamalai Temple in Idukki, Ananthapura Lake Temple, Bathery Jain Temple in Wayanad.</td>
+</tr>
+</table>
+<button class="button" type="button" onclick="alertUser()">Save</button>
+	
+</form>
+</body>
+</html>
+
+

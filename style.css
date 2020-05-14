@@ -1,0 +1,67 @@
+body{
+
+background-color:rgba(144, 238, 144,0.5)
+
+}
+h1 { 
+  font-family: 'Trocchi', serif; font-size: 45px; font-weight: bold; line-height: 48px; margin: 0; 
+  text-align:center;
+  color:ForestGreen;
+}
+div{
+  background-image: url("https://static.toiimg.com/photo/65339195.cms.cms");/*blue sky*/
+  width=2000px;
+}
+#main{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  text-align:center;
+}
+#request{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  text-align:left;
+  font-weight:bold;
+}
+.button {
+  background-color: ForestGreen;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  border: none
+}
+ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  text-align:left;
+}
+
+/*table formatting*/
+table.t1,table.t2{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.t1 td {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  text-align: left;
+}
+table.t2 td{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  text-align: left;
+}
+
+table.t1 tr:nth-child(even){background-color: #f2f2f2}
+
+table.t1 th {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(34,139,34,0.5);
+  color: white;
+}
+
+
